@@ -51,7 +51,7 @@ export default function Queue() {
         serviceType: value.serviceType,
         number: value.number,
         patientId: value.patientId,
-        delay: index * 4000
+        delay: index * 5500
       }));
       setDisplayQueue(newDisplayQueue);
     }

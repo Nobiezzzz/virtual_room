@@ -32,7 +32,7 @@ function App() {
       setTimeout(()=>{
         counerContainer.current.classList ='';
         counterUpdate.current.classList ='';
-      },4000);
+      },5500);
     }
  
   
