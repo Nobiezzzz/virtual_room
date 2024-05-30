@@ -2,9 +2,8 @@ import './App.css'
 import Head from './head'
 import Queue from './queue'
 import Footer from './footer'
-import video from './../public/video-kamech.mov'
+import sound from "./Announcement.mp3"
 import React, { createContext, useRef,   useEffect,  useState} from 'react';
-import YouTube from 'react-youtube'
 export const QueueChangedContext = createContext(null);  
 function App() {
   const [queues , setQueues] =  useState({one:[],two:[],three:[],four:[],})
@@ -14,8 +13,20 @@ function App() {
   const counerContainer = useRef();
   const counterUpdate = useRef();
   const youtubeID = "8006zuLNJlk"
+  function playSound(sound) {
+    const audio = new Audio(sound);
+    audio.play()
+      .then(() => {
+        console.log("")
+      })
+      .catch((error) => {
+        console.error('Error playing audio:', error);
+      });
+  }
+  
+  
   function displayCurrentCounter(){
-    
+    playSound(sound); 
       counerContainer.current.classList ='counter-update-container1';
       counterUpdate.current.classList ='counter-update1';
       setTimeout(()=>{
@@ -27,6 +38,7 @@ function App() {
   
   return (
   <div>
+
     <div className="main"
     >
       <Head />

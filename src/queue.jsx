@@ -2,7 +2,6 @@ import { QueueChangedContext } from './App';
 import './queue.css';
 import React, { useContext, useEffect, useState } from 'react';
 import io from 'socket.io-client';
-
 const socket = io("wss://queue.galataluxe.com");
 
 function Counter({ currentPatient }) {
