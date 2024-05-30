@@ -1,0 +1,35 @@
+:root{
+    --head-bg-color:#A3DE9E;
+    --date-bg-color:#267148;
+}
+.head{
+    background-color: var(--head-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/3;
+}
+.date{
+    height: 100%;
+    width: 13em;
+    background-color: var(--date-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-text{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+.titles{
+    color: var(--date-bg-color);
+    font-size: 2em;
+    text-align: center;
+    font-weight:bolder;
+}
+.logo{
+    height: 7.5em;
+    margin-right: 1.5em;
+}
